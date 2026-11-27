@@ -21,7 +21,7 @@ def view_tasks():
             print(f"{index}: {task}")
 
 def delete_task():
-    if Tasks == None:
+    if len(Tasks) == 0:
         return print("No tasks to delete")
     else:
         view_tasks()
